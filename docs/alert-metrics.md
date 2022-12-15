@@ -1,11 +1,5 @@
 # Alert Metrics
 
-| Metric Name                         | Metric Type | Labels/Tags | Status |
-|-------------------------------------|-------------|-------------|--------|
-| [ALERTS](#alerts)                   |             |             |        |
-
-## Metrics Descriptions
-
-### ALERTS
-
-- Sample text
+| Metric Name | Metric Type | Description                | Status |
+|-------------|-------------|----------------------------|--------|
+| ALERTS      | gauge       | Pending and firing alerts. | STABLE |

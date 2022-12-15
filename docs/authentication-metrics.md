@@ -1,16 +1,6 @@
 # Authentication Metrics
 
-| Metric Name                                                 | Metric Type | Labels/Tags | Status |
-|-------------------------------------------------------------|-------------|-------------|--------|
-| [authenticated_user_requests](#authenticated_user_requests) |             |             |        |
-| [authentication_attempts](#authentication_attempts)         |             |             |        |
-
-## Metrics Descriptions
-
-### authenticated_user_requests
-
-- Sample text
-
-### authentication_attempts
-
-- Sample text
+| Metric Name                 | Metric Type | Description                                               | Status       |
+|-----------------------------|-------------|-----------------------------------------------------------|--------------|
+| authenticated_user_requests | counter     | Counter of authenticated requests broken out by username. | EXPERIMENTAL |
+| authentication_attempts     | counter     | Counter of authenticated attempts.                        | EXPERIMENTAL |

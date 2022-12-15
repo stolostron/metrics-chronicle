@@ -1,22 +1,31 @@
-# Metrics Chronicle
+# Metrics Chronicle Overview
 
 ACM inventory list for metrics and labels
 
-## Exposed Metrics Compatibility Matrix
+## Table of Contents
+
+- Exposed Metrics
+
+## Compatibility Matrix
 
 ### [Advanced Cluster Management (ACM) Metrics](docs/acm-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| acm_search_indexer_http_duration_seconds                                     |    ✘    |    ✘    |    ✓    |    ✓    |    ✓    |     ✘    |
-| acm_search_indexer_hits_total                                                |    ✘    |    ✘    |    ✓    |    ✓    |    ✓    |     ✘    |
-| search_http_duration_seconds                                                 |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |     ✘    |
-| search_http_total                                                            |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |     ✘    |
-| search_authn_failed_total                                                    |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |     ✘    |
-| search_authz_failed_total                                                    |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |     ✘    |
-| search_db_connection_failed_total                                            |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |     ✘    |
-| search_db_connection_success_total                                           |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |     ✘    |
-| search_dbquery_duration_seconds                                              |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |     ✘    |
+| acm_search_indexer_http_duration_seconds                                     |    ✘    |    ✘    |    ✓    |    ✓    |    ✓    |    ✘     |
+| acm_search_indexer_hits_total                                                |    ✘    |    ✘    |    ✓    |    ✓    |    ✓    |    ✘     |
+| cluster:policy_governance_info:propagated_count                              |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| cluster:policy_governance_info:propagated_noncompliant_count                 |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| policyreport_info                                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| policy:policy_governance_info:propagated_count                               |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| policy:policy_governance_info:propagated_noncompliant_count                  |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| search_http_duration_seconds                                                 |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
+| search_http_total                                                            |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
+| search_authn_failed_total                                                    |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
+| search_authz_failed_total                                                    |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
+| search_db_connection_failed_total                                            |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
+| search_db_connection_success_total                                           |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
+| search_dbquery_duration_seconds                                              |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
 
 ### [Alerts Metrics](docs/alert-metrics.md)
 
@@ -267,21 +276,6 @@ ACM inventory list for metrics and labels
 | node:node_memory_bytes_total:sum                                             |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
 | node:node_net_utilisation:sum_irate                                          |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
 | 'node_namespace_pod:kube_pod_info:'                                          |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-
-### [Policy Metrics](policy-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| cluster:policy_governance_info:propagated_count                              |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:policy_governance_info:propagated_noncompliant_count                 |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| policy:policy_governance_info:propagated_count                               |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| policy:policy_governance_info:propagated_noncompliant_count                  |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-
-### [Policy Report Metrics](policy-report-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| policyreport_info                                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
 ### Service Metrics
 
