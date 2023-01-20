@@ -34,7 +34,7 @@ ACM inventory list for metrics and labels
 | :node_memory_MemAvailable_bytes:sum                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 | ALERTS                                                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [Assisted Installer Metrics](installer-metrics.md)
+### [Assisted Installer Metrics](docs/installer-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
@@ -47,14 +47,14 @@ ACM inventory list for metrics and labels
 | assisted_installer_cluster_host_image_pull_status                            |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 | assisted_installer_filesystem_usage_percentage                               |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [Authenticated Metrics](authentication-metrics.md)
+### [Authenticated Metrics](docs/authentication-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
 | authenticated_user_requests                                                  |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 | authentication_attempts                                                      |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [Cluster Metrics](cluster-metrics.md)
+### [Cluster Metrics](docs/cluster-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
@@ -74,7 +74,7 @@ ACM inventory list for metrics and labels
 | cluster_version                                                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 | cluster_version_payload                                                      |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [Container Metrics](container-metrics.md)
+### [Container Metrics](docs/container-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
@@ -92,7 +92,7 @@ ACM inventory list for metrics and labels
 | container_network_transmit_packets_dropped_total                             |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
 | container_spec_cpu_quota                                                     |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [Coredns Metrics](coredns-metrics.md)
+### [Coredns Metrics](docs/coredns-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
@@ -101,14 +101,14 @@ ACM inventory list for metrics and labels
 | coredns_dns_request_type_count_total                                         |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 | coredns_dns_response_rcode_count_total                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [Daemonset Metrics](daemonset-metrics.md)
+### [Daemonset Metrics](docs/daemonset-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
 | kube_daemonset_status_desired_number_scheduled                               |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 | kube_daemonset_status_number_unavailable                                     |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [ETCD Metrics](etcd-metrics.md)
+### [ETCD Metrics](docs/etcd-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
@@ -134,13 +134,13 @@ ACM inventory list for metrics and labels
 | etcd_server_proposals_applied_total                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 | etcd_server_quota_backend_bytes                                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [GRPC Metrics](grpc-metrics.md)
+### [GRPC Metrics](docs/grpc-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
 | grpc_server_started_total                                                    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 
-### [Haproxy Metrics](haproxy-metrics.md)
+### [Haproxy Metrics](docs/haproxy-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
@@ -152,13 +152,13 @@ ACM inventory list for metrics and labels
 | haproxy_backend_response_errors_total                                        |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 | haproxy_backend_up                                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [HTTP Metrics](http-metrics.md)
+### [HTTP Metrics](docs/http-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
 | http_requests_total                                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [Instance Metrics](instance-metrics.md)
+### [Instance Metrics](docs/instance-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
@@ -175,7 +175,7 @@ ACM inventory list for metrics and labels
 | instance_device:node_disk_io_time_seconds:rate1m                             |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 | instance_device:node_disk_io_time_weighted_seconds:rate1m                    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 
-### [Kubelet Metrics](kubelet-metrics.md)
+### [Kubelet Metrics](docs/kubelet-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
@@ -186,20 +186,20 @@ ACM inventory list for metrics and labels
 | kubelet_volume_stats_capacity_bytes                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 | kube_persistentvolume_status_phase                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
 
-### [Machine Metrics](machine-metrics.md)
+### [Machine Metrics](docs/machine-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
 | machine_cpu_cores                                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 | machine_memory_bytes                                                         |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 
-### [Mixin Metrics](mixin-metrics.md)
+### [Mixin Metrics](docs/mixin-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
 | mixin_pod_workload                                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 
-### [Node Metrics](node-metrics.md)
+### [Node Metrics](docs/node-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
@@ -213,14 +213,14 @@ ACM inventory list for metrics and labels
 | kube_node_status_capacity_cpu_cores                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 | kube_node_status_condition                                                   |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
 
-### [OpenShift Metrics](openshift-metrics.md)
+### [OpenShift Metrics](docs/openshift-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
 | openshift_clusterresourcequota_usage                                         |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
 | openshift_clusterresourcequota_labels                                        |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
 
-### [Pod Metrics](pod-metrics.md)
+### [Pod Metrics](docs/pod-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
