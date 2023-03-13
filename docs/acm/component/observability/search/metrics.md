@@ -18,7 +18,7 @@ Nomenclature:
 | search_http_duration_seconds             | histogram   | Latency of of HTTP requests in seconds.  |  Not exposed, New  |
 | search_http_total                        | counter     | Total number HTTP requests. |  Not exposed, New   |
 
-## Insights client
+## Insights Client
 
 | Metric Name       | Metric Type | Description               | Status |
 |-------------------|-------------|---------------------------|--------|
