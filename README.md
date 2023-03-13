@@ -8,25 +8,6 @@ ACM inventory list for metrics and labels
 
 ## Compatibility Matrix
 
-### [Advanced Cluster Management (ACM) Metrics](docs/acm-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| acm_search_indexer_http_duration_seconds                                     |    ✘    |    ✘    |    ✓    |    ✓    |    ✓    |    ✘     |
-| acm_search_indexer_hits_total                                                |    ✘    |    ✘    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:policy_governance_info:propagated_count                              |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:policy_governance_info:propagated_noncompliant_count                 |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| policyreport_info                                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| policy:policy_governance_info:propagated_count                               |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| policy:policy_governance_info:propagated_noncompliant_count                  |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| search_http_duration_seconds                                                 |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_http_total                                                            |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_authn_failed_total                                                    |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_authz_failed_total                                                    |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_db_connection_failed_total                                            |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_db_connection_success_total                                           |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_dbquery_duration_seconds                                              |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-
 ### [Alerts Metrics](docs/alert-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
