@@ -8,277 +8,258 @@ ACM inventory list for metrics and labels
 
 ## Compatibility Matrix
 
-### [Advanced Cluster Management (ACM) Metrics](docs/acm-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| acm_search_indexer_http_duration_seconds                                     |    ✘    |    ✘    |    ✓    |    ✓    |    ✓    |    ✘     |
-| acm_search_indexer_hits_total                                                |    ✘    |    ✘    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:policy_governance_info:propagated_count                              |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:policy_governance_info:propagated_noncompliant_count                 |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| policyreport_info                                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| policy:policy_governance_info:propagated_count                               |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| policy:policy_governance_info:propagated_noncompliant_count                  |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| search_http_duration_seconds                                                 |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_http_total                                                            |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_authn_failed_total                                                    |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_authz_failed_total                                                    |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_db_connection_failed_total                                            |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_db_connection_success_total                                           |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-| search_dbquery_duration_seconds                                              |    ✘    |    ✘    |    ✘    |    ✓    |    ✓    |    ✘     |
-
 ### [Alerts Metrics](docs/alert-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| :node_memory_MemAvailable_bytes:sum                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| ALERTS                                                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| :node_memory_MemAvailable_bytes:sum                                          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| ALERTS                                                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
 
-### [Assisted Installer Metrics](installer-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| assisted_installer_cluster_creation                                          |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| assisted_installer_cluster_installation_started                              |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| assisted_installer_cluster_installation_second                               |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| assisted_installer_cluster_host_installation_count                           |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| assisted_installer_host_installation_phase_seconds                           |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| assisted_installer_cluster_host_disk_sync_duration_ms                        |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| assisted_installer_cluster_host_image_pull_status                            |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| assisted_installer_filesystem_usage_percentage                               |    ✘    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-
-### [Authenticated Metrics](authentication-metrics.md)
+### [Assisted Installer Metrics](docs/installer-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| authenticated_user_requests                                                  |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| authentication_attempts                                                      |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| assisted_installer_cluster_creation                                          |   :x:   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| assisted_installer_cluster_installation_started                              |   :x:   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| assisted_installer_cluster_installation_second                               |   :x:   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| assisted_installer_cluster_host_installation_count                           |   :x:   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| assisted_installer_host_installation_phase_seconds                           |   :x:   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| assisted_installer_cluster_host_disk_sync_duration_ms                        |   :x:   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| assisted_installer_cluster_host_image_pull_status                            |   :x:   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| assisted_installer_filesystem_usage_percentage                               |   :x:   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
 
-### [Cluster Metrics](cluster-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| cluster:capacity_cpu_cores:sum                                               |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:capacity_memory_bytes:sum                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:container_cpu_usage:ratio                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:container_spec_cpu_shares:ratio                                      |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:cpu_usage_cores:sum                                                  |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:memory_usage:ratio                                                   |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:memory_usage_bytes:sum                                               |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster:usage:resources:sum                                                  |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster_infrastructure_provider                                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster_monitoring_operator_reconcile_errors_total                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster_monitoring_operator_reconcile_attempts_total                         |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster_operator_conditions                                                  |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster_operator_up                                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster_version                                                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| cluster_version_payload                                                      |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-
-### [Container Metrics](container-metrics.md)
+### [Authenticated Metrics](docs/authentication-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| container_cpu_cfs_periods_total                                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| container_cpu_cfs_throttled_periods_total                                    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| container_cpu_usage_seconds_total                                            |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_memory_rss                                                         |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_memory_usage_bytes                                                 |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_network_receive_bytes_total                                        |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_network_receive_bytes_total                                        |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_network_receive_packets_total                                      |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_network_receive_packets_dropped_total                              |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_network_transmit_bytes_total                                       |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_network_transmit_packets_total                                     |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_network_transmit_packets_dropped_total                             |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| container_spec_cpu_quota                                                     |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| authenticated_user_requests                                                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| authentication_attempts                                                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
 
-### [Coredns Metrics](coredns-metrics.md)
+### [Cluster Metrics](docs/cluster-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| coredns_dns_request_count_total                                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| coredns_dns_request_duration_seconds_sum                                     |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| coredns_dns_request_type_count_total                                         |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| coredns_dns_response_rcode_count_total                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| cluster:capacity_cpu_cores:sum                                               | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster:capacity_memory_bytes:sum                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster:container_cpu_usage:ratio                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster:container_spec_cpu_shares:ratio                                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster:cpu_usage_cores:sum                                                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster:memory_usage:ratio                                                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster:memory_usage_bytes:sum                                               | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster:usage:resources:sum                                                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster_infrastructure_provider                                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster_monitoring_operator_reconcile_errors_total                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster_monitoring_operator_reconcile_attempts_total                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster_operator_conditions                                                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster_operator_up                                                          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster_version                                                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| cluster_version_payload                                                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
 
-### [Daemonset Metrics](daemonset-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| kube_daemonset_status_desired_number_scheduled                               |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| kube_daemonset_status_number_unavailable                                     |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-
-### [ETCD Metrics](etcd-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| etcd_debugging_mvcc_db_total_size_in_bytes                                   |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_debugging_snap_save_total_duration_seconds_sum                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_mvcc_db_total_size_in_bytes                                             |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_disk_backend_commit_duration_seconds_bucket                             |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_disk_backend_commit_duration_seconds_sum                                |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| etcd_disk_wal_fsync_duration_seconds_bucket                                  |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_disk_wal_fsync_duration_seconds_sum                                     |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| etcd_object_counts                                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| etcd_network_client_grpc_received_bytes_total                                |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_network_client_grpc_sent_bytes_total                                    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_network_peer_received_bytes_total                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_network_peer_sent_bytes_total                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_server_client_requests_total                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| etcd_server_has_leader                                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_server_health_failures                                                  |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| etcd_server_leader_changes_seen_total                                        |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_server_proposals_failed_total                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_server_proposals_pending                                                |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_server_proposals_committed_total                                        |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_server_proposals_applied_total                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| etcd_server_quota_backend_bytes                                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-
-### [GRPC Metrics](grpc-metrics.md)
+### [Container Metrics](docs/container-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| grpc_server_started_total                                                    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
+| container_cpu_cfs_periods_total                                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| container_cpu_cfs_throttled_periods_total                                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| container_cpu_usage_seconds_total                                            |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_memory_rss                                                         |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_memory_usage_bytes                                                 |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_network_receive_bytes_total                                        |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_network_receive_bytes_total                                        |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_network_receive_packets_total                                      |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_network_receive_packets_dropped_total                              |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_network_transmit_bytes_total                                       |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_network_transmit_packets_total                                     |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_network_transmit_packets_dropped_total                             |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| container_spec_cpu_quota                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
 
-### [Haproxy Metrics](haproxy-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| haproxy_backend_connection_errors_total                                      |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| haproxy_backend_connections_total                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| haproxy_backend_current_queue                                                |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| haproxy_backend_http_average_response_latency_milliseconds                   |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| haproxy_backend_max_sessions                                                 |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| haproxy_backend_response_errors_total                                        |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| haproxy_backend_up                                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-
-### [HTTP Metrics](http-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| http_requests_total                                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-
-### [Instance Metrics](instance-metrics.md)
+### [Coredns Metrics](docs/coredns-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| instance:node_filesystem_usage:sum                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| instance:node_cpu_utilisation:rate1m                                         |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance:node_load1_per_cpu:ratio                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance:node_memory_utilisation:ratio                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance:node_network_receive_bytes_excluding_lo:rate1m                      |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance:node_network_receive_drop_excluding_lo:rate1m                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance:node_network_transmit_bytes_excluding_lo:rate1m                     |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance:node_network_transmit_drop_excluding_lo:rate1m                      |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance:node_num_cpu:sum                                                    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance:node_vmstat_pgmajfault:rate1m                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance_device:node_disk_io_time_seconds:rate1m                             |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| instance_device:node_disk_io_time_weighted_seconds:rate1m                    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
+| coredns_dns_request_count_total                                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| coredns_dns_request_duration_seconds_sum                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| coredns_dns_request_type_count_total                                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| coredns_dns_response_rcode_count_total                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
 
-### [Kubelet Metrics](kubelet-metrics.md)
+### [Daemonset Metrics](docs/daemonset-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| kubelet_running_container_count                                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| kubelet_runtime_operations                                                   |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| kubelet_runtime_operations_latency_microseconds                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| kubelet_volume_stats_available_bytes                                         |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| kubelet_volume_stats_capacity_bytes                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| kube_persistentvolume_status_phase                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
+| kube_daemonset_status_desired_number_scheduled                               | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| kube_daemonset_status_number_unavailable                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
 
-### [Machine Metrics](machine-metrics.md)
+### [ETCD Metrics](docs/etcd-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| machine_cpu_cores                                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| machine_memory_bytes                                                         |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
+| etcd_debugging_mvcc_db_total_size_in_bytes                                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_debugging_snap_save_total_duration_seconds_sum                          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_mvcc_db_total_size_in_bytes                                             | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_disk_backend_commit_duration_seconds_bucket                             | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_disk_backend_commit_duration_seconds_sum                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| etcd_disk_wal_fsync_duration_seconds_bucket                                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_disk_wal_fsync_duration_seconds_sum                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| etcd_object_counts                                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| etcd_network_client_grpc_received_bytes_total                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_network_client_grpc_sent_bytes_total                                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_network_peer_received_bytes_total                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_network_peer_sent_bytes_total                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_server_client_requests_total                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| etcd_server_has_leader                                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_server_health_failures                                                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| etcd_server_leader_changes_seen_total                                        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_server_proposals_failed_total                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_server_proposals_pending                                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_server_proposals_committed_total                                        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_server_proposals_applied_total                                          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| etcd_server_quota_backend_bytes                                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
 
-### [Mixin Metrics](mixin-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| mixin_pod_workload                                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-
-### [Node Metrics](node-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| kube_node_labels                                                             |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| kube_node_spec_unschedulable                                                 |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| kube_node_status_allocatable                                                 |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_node_status_allocatable_cpu_cores                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_node_status_allocatable_memory_bytes                                    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_node_status_capacity                                                    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| kube_node_status_capacity_pods                                               |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| kube_node_status_capacity_cpu_cores                                          |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_node_status_condition                                                   |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-
-### [OpenShift Metrics](openshift-metrics.md)
-
-| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
-|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| openshift_clusterresourcequota_usage                                         |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| openshift_clusterresourcequota_labels                                        |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-
-### [Pod Metrics](pod-metrics.md)
+### [GRPC Metrics](docs/grpc-metrics.md)
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| kube_pod_container_resource_limits                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_pod_container_resource_limits_cpu_cores                                 |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_pod_container_resource_limits_memory_bytes                              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_pod_container_resource_requests                                         |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_pod_container_resource_requests_cpu_cores                               |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_pod_container_resource_requests_memory_bytes                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_pod_container_status_restarts_total                                     |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| kube_pod_info                                                                |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_pod_owner                                                               |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| kube_pod_status_ready                                                        |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| kube_pod_status_phase                                                        |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| kube_resourcequota                                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
+| grpc_server_started_total                                                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+
+### [Haproxy Metrics](docs/haproxy-metrics.md)
+
+| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
+|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
+| haproxy_backend_connection_errors_total                                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| haproxy_backend_connections_total                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| haproxy_backend_current_queue                                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| haproxy_backend_http_average_response_latency_milliseconds                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| haproxy_backend_max_sessions                                                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| haproxy_backend_response_errors_total                                        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| haproxy_backend_up                                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+
+### [HTTP Metrics](docs/http-metrics.md)
+
+| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
+|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
+| http_requests_total                                                          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+
+### [Instance Metrics](docs/instance-metrics.md)
+
+| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
+|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
+| instance:node_filesystem_usage:sum                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| instance:node_cpu_utilisation:rate1m                                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance:node_load1_per_cpu:ratio                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance:node_memory_utilisation:ratio                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance:node_network_receive_bytes_excluding_lo:rate1m                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance:node_network_receive_drop_excluding_lo:rate1m                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance:node_network_transmit_bytes_excluding_lo:rate1m                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance:node_network_transmit_drop_excluding_lo:rate1m                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance:node_num_cpu:sum                                                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance:node_vmstat_pgmajfault:rate1m                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance_device:node_disk_io_time_seconds:rate1m                             | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| instance_device:node_disk_io_time_weighted_seconds:rate1m                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+
+### [Kubelet Metrics](docs/kubelet-metrics.md)
+
+| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
+|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
+| kubelet_running_container_count                                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| kubelet_runtime_operations                                                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| kubelet_runtime_operations_latency_microseconds                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| kubelet_volume_stats_available_bytes                                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| kubelet_volume_stats_capacity_bytes                                          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| kube_persistentvolume_status_phase                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+
+### [Machine Metrics](docs/machine-metrics.md)
+
+| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
+|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
+| machine_cpu_cores                                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| machine_memory_bytes                                                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+
+### [Mixin Metrics](docs/mixin-metrics.md)
+
+| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
+|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
+| mixin_pod_workload                                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+
+### [Node Metrics](docs/node-metrics.md)
+
+| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
+|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
+| kube_node_labels                                                             |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| kube_node_spec_unschedulable                                                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| kube_node_status_allocatable                                                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_node_status_allocatable_cpu_cores                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_node_status_allocatable_memory_bytes                                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_node_status_capacity                                                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| kube_node_status_capacity_pods                                               | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| kube_node_status_capacity_cpu_cores                                          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_node_status_condition                                                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+
+### [OpenShift Metrics](docs/openshift-metrics.md)
+
+| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
+|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
+| openshift_clusterresourcequota_usage                                         |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| openshift_clusterresourcequota_labels                                        |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+
+### [Pod Metrics](docs/pod-metrics.md)
+
+| Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
+|------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
+| kube_pod_container_resource_limits                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_pod_container_resource_limits_cpu_cores                                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_pod_container_resource_limits_memory_bytes                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_pod_container_resource_requests                                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_pod_container_resource_requests_cpu_cores                               | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_pod_container_resource_requests_memory_bytes                            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_pod_container_status_restarts_total                                     |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| kube_pod_info                                                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_pod_owner                                                               | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| kube_pod_status_ready                                                        |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| kube_pod_status_phase                                                        |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| kube_resourcequota                                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
 
 ### Namespace Metrics
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| kube_namespace_labels                                                        |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| namespace:kube_pod_container_resource_requests_cpu_cores:sum                 |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| namespace:kube_pod_container_resource_requests_memory_bytes:sum              |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| namespace:container_memory_usage_bytes:sum                                   |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| namespace_cpu:kube_pod_container_resource_requests:sum                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| namespace_pod_name_container_name:container_cpu_usage_seconds_total:sum_rate |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| namespace_workload_pod:kube_pod_owner:relabel                                |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| namespace_workload_pod:kube_pod_owner:relabel                                |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
+| kube_namespace_labels                                                        |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark: |
+| namespace:kube_pod_container_resource_requests_cpu_cores:sum                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| namespace:kube_pod_container_resource_requests_memory_bytes:sum              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| namespace:container_memory_usage_bytes:sum                                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| namespace_cpu:kube_pod_container_resource_requests:sum                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| namespace_pod_name_container_name:container_cpu_usage_seconds_total:sum_rate | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| namespace_workload_pod:kube_pod_owner:relabel                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| namespace_workload_pod:kube_pod_owner:relabel                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
 
 ### Node Metrics
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| node_cpu_seconds_total                                                       |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| node_disk_bytes_read                                                         |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node_disk_bytes_written                                                      |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node_filesystem_avail                                                        |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node_filesystem_avail_bytes                                                  |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| node_filesystem_free_bytes                                                   |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| node_filesystem_size                                                         |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node_filesystem_size_bytes                                                   |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| node_memory_MemAvailable_bytes                                               |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| node_memory_MemTotal_bytes                                                   |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node_namespace_pod_container:container_cpu_usage_seconds_total:sum_rate      |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| node_namespace_pod_container:container_cpu_usage_seconds_total:sum_irate     |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✘     |
-| node_netstat_Tcp_OutSegs                                                     |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| node_netstat_Tcp_RetransSegs                                                 |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| node_netstat_TcpExt_TCPSynRetrans                                            |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
-| node_network_receive_bytes                                                   |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node_network_transmit_bytes                                                  |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node:node_cpu_utilisation:avg1m                                              |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node:node_disk_utilisation:avg_irate                                         |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node:node_memory_bytes_total:sum                                             |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| node:node_net_utilisation:sum_irate                                          |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
-| 'node_namespace_pod:kube_pod_info:'                                          |    ✘    |    ✘    |    ✘    |    ✘    |    ✘    |    ✓     |
+| node_cpu_seconds_total                                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| node_disk_bytes_read                                                         |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node_disk_bytes_written                                                      |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node_filesystem_avail                                                        |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node_filesystem_avail_bytes                                                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| node_filesystem_free_bytes                                                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| node_filesystem_size                                                         |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node_filesystem_size_bytes                                                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| node_memory_MemAvailable_bytes                                               | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| node_memory_MemTotal_bytes                                                   |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node_namespace_pod_container:container_cpu_usage_seconds_total:sum_rate      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| node_namespace_pod_container:container_cpu_usage_seconds_total:sum_irate     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |   :x:   |
+| node_netstat_Tcp_OutSegs                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| node_netstat_Tcp_RetransSegs                                                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| node_netstat_TcpExt_TCPSynRetrans                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| node_network_receive_bytes                                                   |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node_network_transmit_bytes                                                  |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node:node_cpu_utilisation:avg1m                                              |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node:node_disk_utilisation:avg_irate                                         |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node:node_memory_bytes_total:sum                                             |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| node:node_net_utilisation:sum_irate                                          |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
+| 'node_namespace_pod:kube_pod_info:'                                          |   :x:   |   :x:   |   :x:   |   :x:   |   :x:   | :white_check_mark:  |
 
 ### Service Metrics
 
 | Metric Name                                                                  | ACM 2.3 | ACM 2.4 | ACM 2.5 | ACM 2.6 | ACM 2.7 | OCP 3.11 |
 |------------------------------------------------------------------------------|---------|---------|---------|---------|---------|----------|
-| up                                                                           |    ✓    |    ✓    |    ✓    |    ✓    |    ✓    |    ✓     |
+| up                                                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
