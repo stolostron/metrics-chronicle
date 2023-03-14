@@ -1,5 +1,1 @@
 # Server Foundation
-
-## Maintainers
-
-- ...

@@ -1,5 +1,1 @@
-# Observability
-
-## Maintainers
-
-- ...
+# Search & Analytics
