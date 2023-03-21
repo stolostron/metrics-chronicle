@@ -1,4 +1,6 @@
-# Advanced Cluster Management (ACM) Metrics
+# Advanced Cluster Management metrics
+
+See the following table, which lists metrics that can be used across the product for regular health checks on supported versions.
 
 ## Compatibility Matrix
 
