@@ -218,8 +218,6 @@
 | acm_prometheus_tsdb_reloads_total                                            |         |         |         |         |         |          |          |
 | acm_prometheus_tsdb_retention_limit_bytes                                    |         |         |         |         |         |          |          |
 | acm_prometheus_tsdb_size_retentions_total                                    |         |         |         |         |         |          |          |
-| acm_search_indexer_http_duration_seconds                                     |   :x:   |   :x:   |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |          |          |
-| acm_search_indexer_hits_total                                                |   :x:   |   :x:   |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |          |          |
 | acm_prometheus_tsdb_snapshot_replay_error_total                              |         |         |         |         |         |          |          |
 | acm_prometheus_tsdb_storage_blocks_bytes                                     |         |         |         |         |         |          |          |
 | acm_prometheus_tsdb_symbol_table_size_bytes                                  |         |         |         |         |         |          |          |
@@ -243,8 +241,6 @@
 | acm_promhttp_metric_handler_requests_in_flight                               |         |         |         |         |         |          |          |
 | acm_promhttp_metric_handler_requests_total                                   |         |         |         |         |         |          |          |
 | acm_remote_write_requests_total                                              |         |         |         |         |         |          |          |
-| acm_search_indexer_http_duration_seconds                                     |         |         |         |         |         |          |          |
-| acm_search_indexer_hits_total                                                |         |         |         |         |         |          |          |
 | acm_thanos_alert_queue_alerts_dropped_total                                  |         |         |         |         |         |          |          |
 | acm_thanos_alert_queue_alerts_popped_total                                   |         |         |         |         |         |          |          |
 | acm_thanos_alert_queue_alerts_pushed_total                                   |         |         |         |         |         |          |          |
@@ -484,3 +480,7 @@
 | search_db_connection_failed_total                                            |   :x:   |   :x:   |   :x:   |  :white_check_mark:  |  :white_check_mark:  |          |          |
 | search_db_connection_success_total                                           |   :x:   |   :x:   |   :x:   |  :white_check_mark:  |  :white_check_mark:  |          |          |
 | search_dbquery_duration_seconds                                              |   :x:   |   :x:   |   :x:   |  :white_check_mark:  |  :white_check_mark:  |          |          |
+| search_indexer_request_count                                                 |   :x:   |   :x:   |   :x:   |  :white_check_mark:  |  :white_check_mark:  |          |          |
+| search_indexer_request_duration                                              |   :x:   |   :x:   |   :x:   |  :white_check_mark:  |  :white_check_mark:  |          |          |
+| search_indexer_request_in_flight                                             |   :x:   |   :x:   |   :x:   |  :white_check_mark:  |  :white_check_mark:  |          |          |
+| search_indexer_request_size                                                  |   :x:   |   :x:   |   :x:   |  :white_check_mark:  |  :white_check_mark:  |          |          |
