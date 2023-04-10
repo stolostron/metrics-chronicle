@@ -475,14 +475,10 @@ See the following table, which lists metrics that can be used across the product
 | policy_user_errors_total                                                     |                    |                    |                    |                    |
 | policy:policy_governance_info:propagated_count                               | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | policy:policy_governance_info:propagated_noncompliant_count                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_http_duration_seconds                                                 |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_http_total                                                            |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_authn_failed_total                                                    |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_authz_failed_total                                                    |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_db_connection_failed_total                                            |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_db_connection_success_total                                           |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_dbquery_duration_seconds                                              |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_indexer_request_count                                                 |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_indexer_request_duration                                              |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_indexer_request_in_flight                                             |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| search_indexer_request_size                                                  |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| search_api_request_duration                                                | :x:  | :x: | :x: | :white_check_mark: |
+| search_api_db_connection_failed                                            | :x:  | :x: | :x: | :white_check_mark: |
+| search_api_db_query_duration                                               | :x:  | :x: | :x: | :white_check_mark: |
+| search_indexer_request_count                                               | :x:  | :x: | :x: | :white_check_mark: |
+| search_indexer_request_duration                                            | :x:  | :x: | :x: | :white_check_mark: |
+| search_indexer_request_in_flight                                           | :x:  | :x: | :x: | :white_check_mark: |
+| search_indexer_request_size                                                | :x:  | :x: | :x: | :white_check_mark: |
