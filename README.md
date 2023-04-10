@@ -1,21 +1,39 @@
 # Metrics Chronicle Overview
 
-ACM inventory list for metrics and labels
+Metrics are used to monitor the health of your fleet across components. Continue reading to view the version compatibility table for the exposed metrics and labels used in Red Hat Advanced Cluster Management for Kubernetes (RHACM).
 
-## Table of Contents
+## Compatibility Table
 
-- Exposed Metrics
+- [Alerts Metrics](#alerts-metrics)
+- [Assisted Installer Metrics](#assisted-installer-metrics)
+- [Authenticated Metrics](#authenticated-metrics)
+- [Cluster Metrics](#cluster-metrics)
+- [Container Metrics](#container-metrics)
+- [Coredns Metrics](#coredns-metrics)
+- [Daemonset Metrics](#daemonset-metrics)
+- [ETCD Metrics](#etcd-metrics)
+- [GRPC Metrics](#grpc-metrics)
+- [Haproxy Metrics](#haproxy-metrics)
+- [HTTP Metrics](#http-metrics)
+- [Instance Metrics](#instance-metrics)
+- [Kubelet Metrics](#kubelet-metrics)
+- [Machine Metrics](#machine-metrics)
+- [Mixin Metrics](#mixin-metrics)
+- [Node Metrics](#node-metrics)
+- [OpenShift Metrics](#openshift-metrics)
+- [Pod Metrics](#pod-metrics)
+- [Namespace Metrics](#namespace-metrics)
+- [Kubelet Node Metrics](#node-metrics)
+- [Service Metrics](#service-metrics)
 
-## Compatibility Matrix
-
-### [Alerts Metrics](docs/alert-metrics.md)
+### Alerts Metrics
 
 | Metric Name                         | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | :node_memory_MemAvailable_bytes:sum | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | ALERTS                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Assisted Installer Metrics](docs/installer-metrics.md)
+### Assisted Installer Metrics
 
 | Metric Name                                           | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -28,14 +46,14 @@ ACM inventory list for metrics and labels
 | assisted_installer_cluster_host_image_pull_status     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | assisted_installer_filesystem_usage_percentage        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Authenticated Metrics](docs/authentication-metrics.md)
+### Authenticated Metrics
 
 | Metric Name                 | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-----------------------------|--------------------|--------------------|--------------------|--------------------|
 | authenticated_user_requests | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | authentication_attempts     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Cluster Metrics](docs/cluster-metrics.md)
+### Cluster Metrics
 
 | Metric Name                                          | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -55,7 +73,7 @@ ACM inventory list for metrics and labels
 | cluster_version                                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | cluster_version_payload                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Container Metrics](docs/container-metrics.md)
+### Container Metrics
 
 | Metric Name                                      | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |--------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -73,7 +91,7 @@ ACM inventory list for metrics and labels
 | container_network_transmit_packets_dropped_total |         :x:        |         :x:        |         :x:        |         :x:        |
 | container_spec_cpu_quota                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Coredns Metrics](docs/coredns-metrics.md)
+### Coredns Metrics
 
 | Metric Name                              | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -82,14 +100,14 @@ ACM inventory list for metrics and labels
 | coredns_dns_request_type_count_total     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | coredns_dns_response_rcode_count_total   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Daemonset Metrics](docs/daemonset-metrics.md)
+### Daemonset Metrics
 
 | Metric Name                                    | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | kube_daemonset_status_desired_number_scheduled | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | kube_daemonset_status_number_unavailable       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [ETCD Metrics](docs/etcd-metrics.md)
+### ETCD Metrics
 
 | Metric Name                                         | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-----------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -115,13 +133,13 @@ ACM inventory list for metrics and labels
 | etcd_server_proposals_applied_total                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | etcd_server_quota_backend_bytes                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [GRPC Metrics](docs/grpc-metrics.md)
+### GRPC Metrics
 
 | Metric Name               | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |---------------------------|--------------------|--------------------|--------------------|--------------------|
 | grpc_server_started_total | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Haproxy Metrics](docs/haproxy-metrics.md)
+### Haproxy Metrics
 
 | Metric Name                                                | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -133,13 +151,13 @@ ACM inventory list for metrics and labels
 | haproxy_backend_response_errors_total                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | haproxy_backend_up                                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [HTTP Metrics](docs/http-metrics.md)
+### HTTP Metrics
 
 | Metric Name         | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |---------------------|--------------------|--------------------|--------------------|--------------------|
 | http_requests_total | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Instance Metrics](docs/instance-metrics.md)
+### Instance Metrics
 
 | Metric Name                                               | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-----------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -156,7 +174,7 @@ ACM inventory list for metrics and labels
 | instance_device:node_disk_io_time_seconds:rate1m          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | instance_device:node_disk_io_time_weighted_seconds:rate1m | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Kubelet Metrics](docs/kubelet-metrics.md)
+### Kubelet Metrics
 
 | Metric Name                                     | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -167,20 +185,20 @@ ACM inventory list for metrics and labels
 | kubelet_volume_stats_capacity_bytes             | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | kube_persistentvolume_status_phase              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Machine Metrics](docs/machine-metrics.md)
+### Machine Metrics
 
 | Metric Name          | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |----------------------|--------------------|--------------------|--------------------|--------------------|
 | machine_cpu_cores    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | machine_memory_bytes | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Mixin Metrics](docs/mixin-metrics.md)
+### Mixin Metrics
 
 | Metric Name        | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |--------------------|--------------------|--------------------|--------------------|--------------------|
 | mixin_pod_workload | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [Node Metrics](docs/node-metrics.md)
+### Kubelet Node Metrics
 
 | Metric Name                                | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |--------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -194,14 +212,14 @@ ACM inventory list for metrics and labels
 | kube_node_status_capacity_cpu_cores        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | kube_node_status_condition                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### [OpenShift Metrics](docs/openshift-metrics.md)
+### OpenShift Metrics
 
 | Metric Name                           | ACM 2.5 | ACM 2.6 | ACM 2.7 | ACM 2.8 |
 |---------------------------------------|---------|---------|---------|---------|
 | openshift_clusterresourcequota_usage  |   :x:   |   :x:   |   :x:   |   :x:   |
 | openshift_clusterresourcequota_labels |   :x:   |   :x:   |   :x:   |   :x:   |
 
-### [Pod Metrics](docs/pod-metrics.md)
+### Pod Metrics
 
 | Metric Name                                       | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |---------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -263,3 +281,25 @@ ACM inventory list for metrics and labels
 | Metric Name | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-------------|--------------------|--------------------|--------------------|--------------------|
 | up          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+
+
+View a list of metrics for each component in the [`metric-chronicle/docs`](https://github.com/stolostron/metrics-chronicle/blob/main/docs/):
+
+* [Alerts Metrics](docs/alert-metrics.md)
+* [Assisted Installer Metrics](docs/installer-metrics.md)
+* [Authenticated Metrics](docs/authentication-metrics.md)
+* [Cluster Metrics](docs/cluster-metrics.md)
+* [Container Metrics](docs/container-metrics.md)
+* [Coredns Metrics](docs/coredns-metrics.md)
+* [Daemonset Metrics](docs/daemonset-metrics.md)
+* [ETCD Metrics](docs/etcd-metrics.md)
+* [GRPC Metrics](docs/grpc-metrics.md)
+* [Haproxy Metrics](docs/haproxy-metrics.md)
+* [HTTP Metrics](docs/http-metrics.md)
+* [Instance Metrics](docs/instance-metrics.md)
+* [Kubelet Metrics](docs/kubelet-metrics.md)
+* [Machine Metrics](docs/machine-metrics.md)
+* [Mixin Metrics](docs/mixin-metrics.md)
+* [Node Metrics](docs/node-metrics.md)
+* [OpenShift Metrics](docs/openshift-metrics.md)
+* [Pod Metrics](docs/pod-metrics.md)
