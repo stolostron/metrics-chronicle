@@ -23,7 +23,7 @@ Stages about metrics are grouped into three categories：
 
 ### Default Resources
 
-- [ACM Metrics](acm/acm-metrics.md)
+- [ACM Metrics](acm/README.md)
 - [Alerts Metrics](alert-metrics.md)
 - [Authentication Metrics](authentication-metrics.md)
 - [Cluster Metrics](cluster-metrics.md)
@@ -36,7 +36,7 @@ Stages about metrics are grouped into three categories：
 - [HTTP Metrics](http-metrics.md)
 - [Installer Metrics](installer-metrics.md)
 - [Instance Metrics](instance-metrics.md)
-- [Kublet Metrics](kublet-metrics.md)
+- [Kubelet Metrics](kubelet-metrics.md)
 - [Machine Metrics](machine-metrics.md)
 - [Mixin Metrics](mixin-metrics.md)
 - [Namespace Metrics](namespace-metrics.md)
