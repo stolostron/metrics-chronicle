@@ -459,20 +459,20 @@ See the following table, which lists metrics that can be used across the product
 | acm_thanos_store_nodes_grpc_connections                                      |                    |                    | :white_check_mark: | :white_check_mark: |
 | cluster:policy_governance_info:propagated_count                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | cluster:policy_governance_info:propagated_noncompliant_count                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| config_policy_evaluation_seconds_total                                       |                    |                    |                    |                    |
-| config_policy_evaluation_total                                               |                    |                    |                    |                    |
-| config_policies_evaluation_duration_seconds_bucket                           |                    |                    |                    |                    |
-| config_policies_evaluation_duration_seconds_count                            |                    |                    |                    |                    |
-| config_policies_evaluation_duration_seconds_sum                              |                    |                    |                    |                    |
-| config_policy_templates_process_seconds_total                                |                    |                    |                    |                    |
-| config_policy_templates_process_total                                        |                    |                    |                    |                    |
-| ocm_handle_root_policy_duration_seconds_bucket_bucket                        |                    |                    |                    |                    |
-| ocm_handle_root_policy_duration_seconds_bucket_count                         |                    |                    |                    |                    |
-| ocm_handle_root_policy_duration_seconds_bucket_sum                           |                    |                    |                    |                    |
+| config_policy_evaluation_seconds_total                                       |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| config_policy_evaluation_total                                               |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| config_policies_evaluation_duration_seconds_bucket                           |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| config_policies_evaluation_duration_seconds_count                            |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| config_policies_evaluation_duration_seconds_sum                              |         :x:        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| config_policy_templates_process_seconds_total                                |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| config_policy_templates_process_total                                        |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| ocm_handle_root_policy_duration_seconds_bucket_bucket                        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| ocm_handle_root_policy_duration_seconds_bucket_count                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| ocm_handle_root_policy_duration_seconds_bucket_sum                           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | policyreport_info                                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| policy_governance_info                                                       |                    |                    |                    |                    |
-| policy_propagation_failure_total                                             |                    |                    |                    |                    |
-| policy_user_errors_total                                                     |                    |                    |                    |                    |
+| policy_governance_info                                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| policy_propagation_failure_total                                             |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| policy_user_errors_total                                                     |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
 | policy:policy_governance_info:propagated_count                               | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | policy:policy_governance_info:propagated_noncompliant_count                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | search_api_request_duration                                                | :x:  | :x: | :x: | :white_check_mark: |
