@@ -5,6 +5,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 ## Compatibility Table
 
 - [Alerts Metrics](#alerts-metrics)
+- [Application Metrics](#application-metrics)
 - [Assisted Installer Metrics](#assisted-installer-metrics)
 - [Authenticated Metrics](#authenticated-metrics)
 - [Cluster Metrics](#cluster-metrics)
@@ -32,6 +33,20 @@ Metrics are used to monitor the health of your fleet across components. Continue
 |-------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | :node_memory_MemAvailable_bytes:sum | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | ALERTS                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+
+### Application Metrics
+
+| Metric Name (hub cluster)           | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
+|-------------------------------------|--------------------|--------------------|--------------------|--------------------|
+| propagation_successful_time         |  :x:               |  :x:               | :white_check_mark: | :white_check_mark: |
+| propagation_failed_time             |  :x:               |  :x:               | :white_check_mark: | :white_check_mark: |
+
+| Metric Name (managed cluster)       | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
+|-------------------------------------|--------------------|--------------------|--------------------|--------------------|
+| git_successful_pull_time            |  :x:               |  :x:               | :white_check_mark: | :white_check_mark: |
+| git_failed_pull_time                |  :x:               |  :x:               | :white_check_mark: | :white_check_mark: |
+| local_deployment_successful_time    |  :x:               |  :x:               | :white_check_mark: | :white_check_mark: |
+| local_deployment_failed_time        |  :x:               |  :x:               | :white_check_mark: | :white_check_mark: |
 
 ### Assisted Installer Metrics
 
