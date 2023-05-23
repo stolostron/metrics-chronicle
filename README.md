@@ -1,8 +1,8 @@
-# Metrics Chronicle Overview
+# Metrics chronicle overview
 
 Metrics are used to monitor the health of your fleet across components. Continue reading to view the version compatibility table for the exposed metrics and labels used in Red Hat Advanced Cluster Management for Kubernetes (RHACM).
 
-## Compatibility Table
+## Compatibility table
 
 - [Alerts Metrics](#alerts-metrics)
 - [Application Metrics](#application-metrics)
@@ -27,14 +27,14 @@ Metrics are used to monitor the health of your fleet across components. Continue
 - [Kubelet Node Metrics](#node-metrics)
 - [Service Metrics](#service-metrics)
 
-### Alerts Metrics
+### Alerts metrics
 
 | Metric Name                         | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | :node_memory_MemAvailable_bytes:sum | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | ALERTS                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Application Metrics
+### Application metrics
 
 | Metric Name (hub cluster)           | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -48,7 +48,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | local_deployment_successful_time    |  :x:               |  :x:               | :white_check_mark: | :white_check_mark: |
 | local_deployment_failed_time        |  :x:               |  :x:               | :white_check_mark: | :white_check_mark: |
 
-### Assisted Installer Metrics
+### Assisted installer metrics
 
 | Metric Name                                           | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -61,14 +61,14 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | assisted_installer_cluster_host_image_pull_status     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | assisted_installer_filesystem_usage_percentage        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Authenticated Metrics
+### Authenticated metrics
 
 | Metric Name                 | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-----------------------------|--------------------|--------------------|--------------------|--------------------|
 | authenticated_user_requests | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | authentication_attempts     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Cluster Metrics
+### Cluster metrics
 
 | Metric Name                                          | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -88,7 +88,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | cluster_version                                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | cluster_version_payload                              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Container Metrics
+### Container metrics
 
 | Metric Name                                      | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |--------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -106,7 +106,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | container_network_transmit_packets_dropped_total |         :x:        |         :x:        |         :x:        |         :x:        |
 | container_spec_cpu_quota                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Coredns Metrics
+### Coredns metrics
 
 | Metric Name                              | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -115,14 +115,14 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | coredns_dns_request_type_count_total     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | coredns_dns_response_rcode_count_total   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Daemonset Metrics
+### Daemonset metrics
 
 | Metric Name                                    | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | kube_daemonset_status_desired_number_scheduled | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | kube_daemonset_status_number_unavailable       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### ETCD Metrics
+### ETCD metrics
 
 | Metric Name                                         | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-----------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -148,13 +148,13 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | etcd_server_proposals_applied_total                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | etcd_server_quota_backend_bytes                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### GRPC Metrics
+### GRPC metrics
 
 | Metric Name               | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |---------------------------|--------------------|--------------------|--------------------|--------------------|
 | grpc_server_started_total | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Haproxy Metrics
+### Haproxy metrics
 
 | Metric Name                                                | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -166,13 +166,13 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | haproxy_backend_response_errors_total                      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | haproxy_backend_up                                         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### HTTP Metrics
+### HTTP metrics
 
 | Metric Name         | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |---------------------|--------------------|--------------------|--------------------|--------------------|
 | http_requests_total | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Instance Metrics
+### Instance metrics
 
 | Metric Name                                               | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-----------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -189,7 +189,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | instance_device:node_disk_io_time_seconds:rate1m          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | instance_device:node_disk_io_time_weighted_seconds:rate1m | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Kubelet Metrics
+### Kubelet metrics
 
 | Metric Name                                     | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -200,20 +200,20 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | kubelet_volume_stats_capacity_bytes             | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | kube_persistentvolume_status_phase              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Machine Metrics
+### Machine metrics
 
 | Metric Name          | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |----------------------|--------------------|--------------------|--------------------|--------------------|
 | machine_cpu_cores    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | machine_memory_bytes | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Mixin Metrics
+### Mixin metrics
 
 | Metric Name        | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |--------------------|--------------------|--------------------|--------------------|--------------------|
 | mixin_pod_workload | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Kubelet Node Metrics
+### Kubelet node metrics
 
 | Metric Name                                | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |--------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -227,14 +227,14 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | kube_node_status_capacity_cpu_cores        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | kube_node_status_condition                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### OpenShift Metrics
+### OpenShift metrics
 
 | Metric Name                           | ACM 2.5 | ACM 2.6 | ACM 2.7 | ACM 2.8 |
 |---------------------------------------|---------|---------|---------|---------|
 | openshift_clusterresourcequota_usage  |   :x:   |   :x:   |   :x:   |   :x:   |
 | openshift_clusterresourcequota_labels |   :x:   |   :x:   |   :x:   |   :x:   |
 
-### Pod Metrics
+### Pod metrics
 
 | Metric Name                                       | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |---------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -251,7 +251,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | kube_pod_status_phase                             |         :x:        |         :x:        |         :x:        |         :x:        |
 | kube_resourcequota                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Namespace Metrics
+### Namespace metrics
 
 | Metric Name                                                                  | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -264,7 +264,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | namespace_workload_pod:kube_pod_owner:relabel                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | namespace_workload_pod:kube_pod_owner:relabel                                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-### Node Metrics
+### Node metrics
 
 | Metric Name                                                              | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |--------------------------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
@@ -291,7 +291,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | node:node_net_utilisation:sum_irate                                      |         :x:        |         :x:        |         :x:        |         :x:        |
 | 'node_namespace_pod:kube_pod_info:'                                      |         :x:        |         :x:        |         :x:        |         :x:        |
 
-### Service Metrics
+### Service metrics
 
 | Metric Name | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |-------------|--------------------|--------------------|--------------------|--------------------|
