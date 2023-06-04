@@ -43,5 +43,6 @@ Stages about metrics are grouped into three categories：
 - [Node Metrics](node-metrics.md)
 - [OpenShift Metrics](openshift-metrics.md)
 - [Pod Metrics](pod-metrics.md)
+- [Server Foundation Metrics](acm/component/server-foundation/metrics.md)
 
 ### Optional Resources
