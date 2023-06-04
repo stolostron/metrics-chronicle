@@ -318,3 +318,4 @@ View a list of metrics for each component in the [`metric-chronicle/docs`](https
 * [Node Metrics](docs/node-metrics.md)
 * [OpenShift Metrics](docs/openshift-metrics.md)
 * [Pod Metrics](docs/pod-metrics.md)
+* [Server Foundation Metrics](docs/acm/component/server-foundation/metrics.md)
