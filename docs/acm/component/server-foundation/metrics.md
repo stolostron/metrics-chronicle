@@ -3,8 +3,8 @@
 Nomenclature:
 
 - `Not exposed` implies not in ACM Observability [default allow-list](https://github.com/stolostron/multicluster-observability-operator/blob/main/operators/multiclusterobservability/manifests/base/config/metrics_allowlist.yaml)
-- `New` implies just added as a part of ACM 2.6 / ACM 2.7
-- `From Managed Cluster` implies these are not emitted from the ACM hub Server but from Managed Cluster.
+- `New` implies just added as a part of Red Hat Advanced Cluster Management version 2.7 or multicluster engine version 2.2.
+- `From Managed Cluster` implies these are not emitted from the hub server, but from the managed cluster.
 
 | Metric Name                                             | Metric Type | Description | Labels | Status |
 |---------------------------------------------------------|-------------|-------------|-------|--------|
