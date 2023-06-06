@@ -8,6 +8,7 @@
   - [Exposed Metrics](#exposed-metrics)
     - [Default Resources](#default-resources)
     - [Optional Resources](#optional-resources)
+  - [Non-Exposed Metrics](#non-exposed-metrics)
 
 ## Metrics Stages
 
@@ -45,3 +46,10 @@ Stages about metrics are grouped into three categories：
 - [Pod Metrics](pod-metrics.md)
 
 ### Optional Resources
+
+## Non-Exposed Metrics
+
+### Default Resources
+
+- [Server Foundation Metrics](acm/component/server-foundation/metrics.md)
+
