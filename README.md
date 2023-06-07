@@ -297,7 +297,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | Metric Name                                                                  | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
 |------------------------------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | acm_managed_cluster_labels                                                   |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
-| acm_managed_cluster_info                                                     |         :x:        |         :x:        |         :x:        | :white_check_mark: |
+| acm_managed_cluster_info                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | acm_managed_cluster_count                                                    |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
 | acm_managed_cluster_addon_status_condition                                   |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
 | acm_managed_cluster_status_condition                                         |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
