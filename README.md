@@ -25,6 +25,7 @@ Metrics are used to monitor the health of your fleet across components. Continue
 - [Pod Metrics](#pod-metrics)
 - [Namespace Metrics](#namespace-metrics)
 - [Kubelet Node Metrics](#node-metrics)
+- [Server Foundation Metrics](#server-foundation-metrics)
 - [Service Metrics](#service-metrics)
 
 ### Alerts metrics
@@ -290,6 +291,18 @@ Metrics are used to monitor the health of your fleet across components. Continue
 | node:node_memory_bytes_total:sum                                         |         :x:        |         :x:        |         :x:        |         :x:        |
 | node:node_net_utilisation:sum_irate                                      |         :x:        |         :x:        |         :x:        |         :x:        |
 | 'node_namespace_pod:kube_pod_info:'                                      |         :x:        |         :x:        |         :x:        |         :x:        |
+
+### Server foundation metrics
+
+| Metric Name                                                                  | ACM 2.5            | ACM 2.6            | ACM 2.7            | ACM 2.8            |
+|------------------------------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
+| acm_managed_cluster_labels                                                   |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| acm_managed_cluster_info                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| acm_managed_cluster_count                                                    |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| acm_managed_cluster_addon_status_condition                                   |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| acm_managed_cluster_status_condition                                         |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| acm_manifestwork_status_condition                                            |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
+| acm_manifestwork_count                                                       |         :x:        |         :x:        | :white_check_mark: | :white_check_mark: |
 
 ### Service metrics
 
