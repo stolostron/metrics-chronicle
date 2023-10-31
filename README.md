@@ -310,6 +310,11 @@ Metrics are used to monitor the health of your fleet across components. Continue
 |-------------|--------------------|--------------------|--------------------|--------------------|
 | up          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
+### Multicluster Global Hub Metrics
+| Metric Name | Globalhub 1.0        | 
+|-------------|----------------------|
+| multicluster_global_hub_jobs_status| :white_check_mark: |
+
 
 View a list of metrics for each component in the [`metric-chronicle/docs`](https://github.com/stolostron/metrics-chronicle/blob/main/docs/):
 
@@ -332,3 +337,4 @@ View a list of metrics for each component in the [`metric-chronicle/docs`](https
 * [OpenShift Metrics](docs/openshift-metrics.md)
 * [Pod Metrics](docs/pod-metrics.md)
 * [Server Foundation Metrics](docs/acm/component/server-foundation/metrics.md)
+* [Multicluster Global Hub Metrics](docs/global_hub/global-hub.md)
